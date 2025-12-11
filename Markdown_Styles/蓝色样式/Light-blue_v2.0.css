@@ -1,0 +1,84 @@
+/* 标题通用样式 */
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body h6 {
+    line-height: 1.2;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 16px;
+}
+
+/* 一级大纲 */
+html body h1 {
+    font-size: 2.25em;
+    color: #333;
+    margin: 2rem 0;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #4080ff;
+    padding-bottom: 0.3em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* 二级大纲 */
+html body h2 {
+    display: block;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-size: 1.75em;
+    color: #ffffff;
+    margin: 1.5rem 0 1rem;
+    padding: 0.3em 1.2em 0.3em 0.8em;
+    background-color: #4080ff;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 100%, 0 100%);
+    position: relative;
+    z-index: 1;
+}
+
+/* 三级大纲 */
+html body h3 {
+    display: inline-block;
+    max-width: 100%;
+    clear: both;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    color: #333;
+    margin: 2rem 0;
+    padding: 0.3em 0.6em;
+    border: 1px solid #4080ff;
+    border-top: 3px solid #4080ff;
+    border-radius: 2px;
+}
+
+/* 四级大纲 */
+html body h4 {
+    font-size: 1.2em;
+    color: #333333;
+    margin: 2rem 0;
+    padding-left: 0.8em;
+    position: relative;
+}
+
+html body h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: #4080ff;
+}
+
+/* 五级大纲 */
+html body h5 { font-size: 1.1em; }
+
+/* 六级大纲 */
+html body h6 {
+    font-size: 1em;
+    color: #7e7e7e;
+}
